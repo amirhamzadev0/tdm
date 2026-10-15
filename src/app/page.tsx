@@ -1,69 +1,82 @@
-import Image from "next/image";
+import { BookingPanel } from "@/components/forms/BookingPanel";
+import { BrandMarquee } from "@/components/brands/BrandMarquee";
+import { CategoryGrid } from "@/components/home/CategoryGrid";
+import { FlashSale } from "@/components/home/FlashSale";
+import { HeroSection } from "@/components/home/HeroSection";
+import { OfferingGrid } from "@/components/home/OfferingGrid";
+import { TrustStrip } from "@/components/home/TrustStrip";
+import { OfferGrid } from "@/components/offers/OfferGrid";
+import { RepairProcess } from "@/components/repair/RepairProcess";
+import { RepairServiceList } from "@/components/repair/RepairServiceList";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { ProductGrid } from "@/components/shop/ProductGrid";
+import { ButtonLink } from "@/components/ui/Button";
+import { Section } from "@/components/ui/Section";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { routeSeo } from "@/config/seo";
+import { buildMetadata, organizationSchema } from "@/lib/seo";
+import { getHomePageViewModel } from "@/viewmodels/home.viewmodel";
+import { getRepairPageViewModel } from "@/viewmodels/repair.viewmodel";
 
-export default function Home() {
+export const metadata = buildMetadata({ ...routeSeo.home, path: "/", absoluteTitle: true });
+
+export default async function HomePage() {
+  const [home, repair] = await Promise.all([getHomePageViewModel(), getRepairPageViewModel()]);
+  const { content } = home;
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <>
+      <JsonLd data={organizationSchema()} />
+
+      <HeroSection hero={content.hero} />
+      <TrustStrip items={content.trust} />
+
+      <Section>
+        <SectionHeading title={content.offerings.heading} />
+        <OfferingGrid items={content.offerings.items} />
+      </Section>
+
+      <BrandMarquee brands={home.brands} />
+
+      <Section id="categories">
+        <SectionHeading title={content.categoriesHeading} />
+        <CategoryGrid categories={home.categories} />
+      </Section>
+
+      <Section id="sale">
+        <SectionHeading title={content.flashSaleHeading} />
+        <FlashSale products={home.saleItems} />
+      </Section>
+
+      <Section id="shop">
+        <SectionHeading title={content.featuredHeading} />
+        <ProductGrid products={home.featured} />
+        <div className="section-footer">
+          <ButtonLink href="/shop" variant="outline">
+            Browse the full catalogue
+          </ButtonLink>
+        </div>
+      </Section>
+
+      <Section id="repair" tone="navy">
+        <SectionHeading title={content.repairHeading} summary={content.repairSummary} />
+        <RepairProcess steps={repair.content.process} />
+        <RepairServiceList services={home.repairServices} />
+      </Section>
+
+      <Section id="offers">
+        <SectionHeading title={content.offersHeading} />
+        <OfferGrid offers={home.offers} />
+      </Section>
+
+      <Section id="book">
+        <BookingPanel
+          heading={content.booking.heading}
+          headingAccent={content.booking.headingAccent}
+          summary={content.booking.summary}
+          serviceTitles={home.repairServices.map((service) => service.title)}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </Section>
+    </>
   );
 }

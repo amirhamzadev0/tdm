@@ -1,0 +1,119 @@
+{
+  "home": {
+    "hero": {
+      "eyebrow": "Open daily · 10am – 8pm",
+      "headline": ["Buy, repair & upgrade", "every", "device", "in one place"],
+      "summary": "New, used and refurbished mobiles, laptops and computers. Book a repair online and we'll confirm within the hour.",
+      "searchPlaceholder": "Search 18+ products, brands, specs",
+      "primaryCta": {
+        "label": "Start Shopping",
+        "href": "/shop"
+      },
+      "secondaryCta": {
+        "label": "Book a Repair",
+        "href": "/repair#book"
+      }
+    },
+    "trust": [
+      {
+        "title": "Tested & warrantied",
+        "text": "Every laptop, every part"
+      },
+      {
+        "title": "Free diagnosis",
+        "text": "Pay only if you approve"
+      },
+      {
+        "title": "Easy installments",
+        "text": "Ask in store"
+      },
+      {
+        "title": "Same-day repair",
+        "text": "Most common fixes"
+      }
+    ],
+    "featuredHeading": "Shop all devices",
+    "repairHeading": "Repair, done properly",
+    "repairSummary": "Free diagnosis. You approve the price before we start. 30-day warranty on every fix.",
+    "offersHeading": "Offers & discounts",
+    "booking": {
+      "heading": "Book your repair slot",
+      "headingAccent": "repair slot",
+      "summary": "Pick a service and a time. We call to confirm within the hour, and your booking appears on our admin desk instantly."
+    },
+    "offerings": {
+      "heading": "What can we do for you",
+      "items": [
+        {
+          "number": "01",
+          "title": "Buy devices",
+          "text": "New, used and refurbished mobiles, laptops, computers and gadgets, all tested.",
+          "cta": {
+            "label": "Shop Now",
+            "href": "/shop"
+          }
+        },
+        {
+          "number": "02",
+          "title": "Repair service",
+          "text": "Screens, batteries, keyboards, software and motherboard work. Free diagnosis.",
+          "cta": {
+            "label": "Book Repair",
+            "href": "/repair#book"
+          }
+        },
+        {
+          "number": "03",
+          "title": "Trade-in & offers",
+          "text": "Swap your old device and save with coupon codes and flash sales.",
+          "cta": {
+            "label": "See Offers",
+            "href": "/offers"
+          }
+        }
+      ]
+    },
+    "categoriesHeading": "Shop by category",
+    "flashSaleHeading": "Flash sale"
+  },
+  "repair": {
+    "heroTitle": "Repair, done properly.",
+    "heroSummary": "Free diagnosis. You approve the price before we start. 30-day warranty on every fix.",
+    "process": [
+      {
+        "number": "01",
+        "title": "Book",
+        "text": "Pick a service and a slot online."
+      },
+      {
+        "number": "02",
+        "title": "Diagnose",
+        "text": "Free check. We find the real fault."
+      },
+      {
+        "number": "03",
+        "title": "Approve",
+        "text": "You see the price first. No surprises."
+      },
+      {
+        "number": "04",
+        "title": "Fixed",
+        "text": "Tested and returned with 30-day warranty."
+      }
+    ],
+    "guarantees": [
+      {
+        "title": "Free diagnosis",
+        "text": "Pay only if you approve the quote."
+      },
+      {
+        "title": "30-day warranty",
+        "text": "Every repair is covered for 30 days."
+      },
+      {
+        "title": "Same-day fixes",
+        "text": "Most common repairs are done the same day."
+      }
+    ]
+  }
+}

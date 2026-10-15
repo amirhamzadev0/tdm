@@ -1,0 +1,64 @@
+[
+  {
+    "id": "c-1",
+    "slug": "mobiles",
+    "name": "Mobiles",
+    "summary": "New, used & refurbished phones",
+    "order": 1,
+    "brands": [
+      "Apple",
+      "Samsung",
+      "Xiaomi",
+      "Oppo",
+      "Vivo",
+      "Realme",
+      "Infinix",
+      "Tecno",
+      "Huawei",
+      "OnePlus"
+    ]
+  },
+  {
+    "id": "c-2",
+    "slug": "laptops",
+    "name": "Laptops",
+    "summary": "Work, study & gaming",
+    "order": 2,
+    "brands": ["Apple", "HP", "Dell", "Lenovo", "ASUS", "Acer", "MSI", "Microsoft"]
+  },
+  {
+    "id": "c-3",
+    "slug": "computers",
+    "name": "Computers",
+    "summary": "Desktops & workstations",
+    "order": 3,
+    "brands": [
+      "Dell",
+      "HP",
+      "Lenovo",
+      "ASUS",
+      "MSI",
+      "Gigabyte",
+      "Intel",
+      "AMD",
+      "NVIDIA",
+      "Corsair"
+    ]
+  },
+  {
+    "id": "c-4",
+    "slug": "accessories",
+    "name": "Accessories",
+    "summary": "Chargers, bags & more",
+    "order": 4,
+    "brands": ["Anker", "Logitech", "Baseus", "Ugreen", "Razer", "HyperX"]
+  },
+  {
+    "id": "c-5",
+    "slug": "gadgets",
+    "name": "Gadgets",
+    "summary": "Audio, wearables & power",
+    "order": 5,
+    "brands": ["Sony", "JBL", "Xiaomi", "Samsung", "Apple", "Anker"]
+  }
+]

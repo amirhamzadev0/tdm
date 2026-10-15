@@ -1,0 +1,758 @@
+[
+  {
+    "id": "p-01",
+    "slug": "iphone-13-128gb",
+    "name": "iPhone 13 128GB",
+    "spec": "A15 · 128GB · 6.1\" OLED",
+    "price": 118000,
+    "oldPrice": 128000,
+    "condition": "used",
+    "category": "mobiles",
+    "image": null,
+    "featured": true,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "A phone from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["A15", "128GB", "6.1\" OLED"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Fully tested before sale",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 1,
+    "brand": "Apple"
+  },
+  {
+    "id": "p-02",
+    "slug": "samsung-galaxy-a55",
+    "name": "Samsung Galaxy A55",
+    "spec": "8GB · 256GB · 50MP · 5G",
+    "price": 69000,
+    "oldPrice": null,
+    "condition": "new",
+    "category": "mobiles",
+    "image": null,
+    "featured": true,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "A phone from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["8GB", "256GB", "50MP", "5G"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 2,
+    "brand": "Samsung"
+  },
+  {
+    "id": "p-03",
+    "slug": "redmi-note-12",
+    "name": "Redmi Note 12",
+    "spec": "6GB · 128GB · AMOLED",
+    "price": 29500,
+    "oldPrice": 33000,
+    "condition": "new",
+    "category": "mobiles",
+    "image": null,
+    "featured": true,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "A phone from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["6GB", "128GB", "AMOLED"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 3,
+    "brand": "Xiaomi"
+  },
+  {
+    "id": "p-04",
+    "slug": "iphone-11-64gb",
+    "name": "iPhone 11 64GB",
+    "spec": "A13 · 64GB · battery 85%+",
+    "price": 52000,
+    "oldPrice": 60000,
+    "condition": "used",
+    "category": "mobiles",
+    "image": null,
+    "featured": true,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "A phone from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["A13", "64GB", "battery 85%+"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Fully tested before sale",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 4,
+    "brand": "Apple"
+  },
+  {
+    "id": "p-05",
+    "slug": "galaxy-s21-ultra",
+    "name": "Galaxy S21 Ultra",
+    "spec": "12GB · 256GB · 108MP",
+    "price": 78000,
+    "oldPrice": 90000,
+    "condition": "refurbished",
+    "category": "mobiles",
+    "image": null,
+    "featured": true,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "A phone from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["12GB", "256GB", "108MP"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Tested and refurbished by our repair desk",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 5,
+    "brand": "Samsung"
+  },
+  {
+    "id": "p-06",
+    "slug": "thinkpad-t480",
+    "name": "ThinkPad T480",
+    "spec": "i5 8th · 16GB · 256GB SSD · 14\"",
+    "price": 38500,
+    "oldPrice": 45000,
+    "condition": "used",
+    "category": "laptops",
+    "image": null,
+    "featured": true,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "A laptop for work, study or play, tested end to end before it goes on the shelf."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["i5 8th", "16GB", "256GB SSD", "14\""]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Fully tested before sale",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 6,
+    "brand": "Lenovo"
+  },
+  {
+    "id": "p-07",
+    "slug": "macbook-air-m1",
+    "name": "MacBook Air M1",
+    "spec": "8GB · 256GB · 13.3\" Retina",
+    "price": 89000,
+    "oldPrice": 99000,
+    "condition": "refurbished",
+    "category": "laptops",
+    "image": null,
+    "featured": true,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "A laptop for work, study or play, tested end to end before it goes on the shelf."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["8GB", "256GB", "13.3\" Retina"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Tested and refurbished by our repair desk",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 7,
+    "brand": "Apple"
+  },
+  {
+    "id": "p-08",
+    "slug": "hp-pavilion-15",
+    "name": "HP Pavilion 15",
+    "spec": "Ryzen 5 · 8GB · 512GB SSD",
+    "price": 62000,
+    "oldPrice": null,
+    "condition": "new",
+    "category": "laptops",
+    "image": null,
+    "featured": true,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "A laptop for work, study or play, tested end to end before it goes on the shelf."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["Ryzen 5", "8GB", "512GB SSD"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 8,
+    "brand": "HP"
+  },
+  {
+    "id": "p-09",
+    "slug": "asus-tuf-gaming",
+    "name": "ASUS TUF Gaming",
+    "spec": "i5 12th · RTX 3050 · 16GB",
+    "price": 98000,
+    "oldPrice": 110000,
+    "condition": "new",
+    "category": "laptops",
+    "image": null,
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "A laptop for work, study or play, tested end to end before it goes on the shelf."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["i5 12th", "RTX 3050", "16GB"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 9,
+    "brand": "ASUS"
+  },
+  {
+    "id": "p-10",
+    "slug": "dell-optiplex-7050",
+    "name": "Dell OptiPlex 7050",
+    "spec": "i5 7th · 8GB · 256GB SSD · SFF",
+    "price": 24000,
+    "oldPrice": 28000,
+    "condition": "used",
+    "category": "computers",
+    "image": null,
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "A desktop that is ready to set up and ready to work, tested before sale."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["i5 7th", "8GB", "256GB SSD", "SFF"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Fully tested before sale",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 10,
+    "brand": "Dell"
+  },
+  {
+    "id": "p-11",
+    "slug": "gaming-pc-ryzen-5",
+    "name": "Gaming PC Ryzen 5",
+    "spec": "RTX 3060 · 16GB · 1TB NVMe",
+    "price": 125000,
+    "oldPrice": null,
+    "condition": "new",
+    "category": "computers",
+    "image": null,
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "A desktop that is ready to set up and ready to work, tested before sale."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["RTX 3060", "16GB", "1TB NVMe"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 11,
+    "brand": "AMD"
+  },
+  {
+    "id": "p-12",
+    "slug": "hp-elitedesk-800",
+    "name": "HP EliteDesk 800",
+    "spec": "i7 6th · 16GB · 512GB SSD",
+    "price": 32000,
+    "oldPrice": 37000,
+    "condition": "refurbished",
+    "category": "computers",
+    "image": null,
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "A desktop that is ready to set up and ready to work, tested before sale."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["i7 6th", "16GB", "512GB SSD"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Tested and refurbished by our repair desk",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 12,
+    "brand": "HP"
+  },
+  {
+    "id": "p-13",
+    "slug": "65w-gan-charger",
+    "name": "65W GaN Charger",
+    "spec": "USB-C · fast charge · 2 ports",
+    "price": 2200,
+    "oldPrice": 2800,
+    "condition": "new",
+    "category": "accessories",
+    "image": null,
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "A practical everyday accessory, picked to work well with the devices we sell."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["USB-C", "fast charge", "2 ports"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 13,
+    "brand": "Anker"
+  },
+  {
+    "id": "p-14",
+    "slug": "laptop-backpack",
+    "name": "Laptop Backpack",
+    "spec": "Water-resistant · fits 15.6\"",
+    "price": 2800,
+    "oldPrice": null,
+    "condition": "new",
+    "category": "accessories",
+    "image": null,
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "A practical everyday accessory, picked to work well with the devices we sell."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["Water-resistant", "fits 15.6\""]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 14,
+    "brand": null
+  },
+  {
+    "id": "p-15",
+    "slug": "wireless-mouse",
+    "name": "Wireless Mouse",
+    "spec": "2.4GHz · silent click",
+    "price": 900,
+    "oldPrice": 1200,
+    "condition": "new",
+    "category": "accessories",
+    "image": null,
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "A practical everyday accessory, picked to work well with the devices we sell."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["2.4GHz", "silent click"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 15,
+    "brand": "Logitech"
+  },
+  {
+    "id": "p-16",
+    "slug": "wireless-earbuds",
+    "name": "Wireless Earbuds",
+    "spec": "ANC · 30h battery",
+    "price": 4500,
+    "oldPrice": 5500,
+    "condition": "new",
+    "category": "gadgets",
+    "image": null,
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "A useful gadget that pairs with your phone or laptop."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["ANC", "30h battery"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 16,
+    "brand": "JBL"
+  },
+  {
+    "id": "p-17",
+    "slug": "smart-watch",
+    "name": "Smart Watch",
+    "spec": "AMOLED · heart rate · 7-day battery",
+    "price": 6500,
+    "oldPrice": 8000,
+    "condition": "new",
+    "category": "gadgets",
+    "image": null,
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "A useful gadget that pairs with your phone or laptop."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["AMOLED", "heart rate", "7-day battery"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 17,
+    "brand": "Xiaomi"
+  },
+  {
+    "id": "p-18",
+    "slug": "20-000mah-power-bank",
+    "name": "20,000mAh Power Bank",
+    "spec": "22.5W fast charge",
+    "price": 3200,
+    "oldPrice": null,
+    "condition": "new",
+    "category": "gadgets",
+    "image": null,
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "A useful gadget that pairs with your phone or laptop."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["22.5W fast charge"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 18,
+    "brand": "Anker"
+  }
+]

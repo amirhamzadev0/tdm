@@ -1,0 +1,170 @@
+[
+  {
+    "id": "s-1",
+    "slug": "screen-replacement",
+    "title": "Screen replacement",
+    "summary": "Cracked, flickering or dead panels.",
+    "icon": "monitor-smartphone",
+    "startingPrice": 3500,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "We replace damaged screens on phones and laptops and test touch, brightness and colour before handing the device back."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "How it works"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Book a slot online or walk in",
+          "Free diagnosis and a quoted price before we start",
+          "Repair, testing and a 30-day warranty on the fix"
+        ]
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "s-2",
+    "slug": "battery-replacement",
+    "title": "Battery replacement",
+    "summary": "Tested cells, full-day runtime.",
+    "icon": "battery-charging",
+    "startingPrice": 2000,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Swelling, fast drain or sudden shutdowns usually point to a worn battery. We fit a tested cell and verify charge behaviour."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "How it works"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Book a slot online or walk in",
+          "Free diagnosis and a quoted price before we start",
+          "Repair, testing and a 30-day warranty on the fix"
+        ]
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "s-3",
+    "slug": "keyboard-trackpad",
+    "title": "Keyboard & trackpad",
+    "summary": "Sticky, dead or liquid-hit keys.",
+    "icon": "keyboard",
+    "startingPrice": 1200,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Individual keys, whole keyboards and trackpads replaced or cleaned, including after liquid spills."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "How it works"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Book a slot online or walk in",
+          "Free diagnosis and a quoted price before we start",
+          "Repair, testing and a 30-day warranty on the fix"
+        ]
+      }
+    ],
+    "order": 3
+  },
+  {
+    "id": "s-4",
+    "slug": "ssd-ram-upgrade",
+    "title": "SSD / RAM upgrade",
+    "summary": "Make an old laptop fast again.",
+    "icon": "hard-drive",
+    "startingPrice": 800,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "An SSD and more memory are the cheapest way to give an older laptop a second life. We migrate your data on request."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "How it works"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Book a slot online or walk in",
+          "Free diagnosis and a quoted price before we start",
+          "Repair, testing and a 30-day warranty on the fix"
+        ]
+      }
+    ],
+    "order": 4
+  },
+  {
+    "id": "s-5",
+    "slug": "software-virus-fix",
+    "title": "Software & virus fix",
+    "summary": "Windows reinstall, cleanup, drivers.",
+    "icon": "shield-check",
+    "startingPrice": 500,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Slow, infected or unstable systems get a clean reinstall or cleanup, with drivers and essentials set up."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "How it works"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Book a slot online or walk in",
+          "Free diagnosis and a quoted price before we start",
+          "Repair, testing and a 30-day warranty on the fix"
+        ]
+      }
+    ],
+    "order": 5
+  },
+  {
+    "id": "s-6",
+    "slug": "motherboard-repair",
+    "title": "Motherboard repair",
+    "summary": "Chip-level diagnosis and repair.",
+    "icon": "cpu",
+    "startingPrice": 2500,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Boards that do not power on or charge are diagnosed at component level and repaired where it is worth repairing."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "How it works"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Book a slot online or walk in",
+          "Free diagnosis and a quoted price before we start",
+          "Repair, testing and a 30-day warranty on the fix"
+        ]
+      }
+    ],
+    "order": 6
+  }
+]

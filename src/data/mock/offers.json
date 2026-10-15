@@ -1,0 +1,26 @@
+[
+  {
+    "id": "o-1",
+    "highlight": "10%",
+    "title": "Off your first repair",
+    "description": "New customers save on any service.",
+    "code": "FIRST10",
+    "order": 1
+  },
+  {
+    "id": "o-2",
+    "highlight": "Free",
+    "title": "Yearly checkup",
+    "description": "For any laptop bought from us.",
+    "code": "CHECKUP",
+    "order": 2
+  },
+  {
+    "id": "o-3",
+    "highlight": "PKR 1,000",
+    "title": "Trade-in bonus",
+    "description": "Swap your old laptop towards a new one.",
+    "code": "TRADEIN",
+    "order": 3
+  }
+]
