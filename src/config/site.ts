@@ -1,5 +1,7 @@
 import type { SiteInfo } from "@/models/site";
 
+const MAP_QUERY = encodeURIComponent("shop no.14, london plaza, g9 markaz, Islamabad, Pakistan");
+
 // Contact details for the shop.
 export const site: SiteInfo = {
   name: "device masters",
@@ -10,9 +12,8 @@ export const site: SiteInfo = {
   phone: "0325 5578000",
   email: "thedevicemasterofficial@gmail.com",
   address: "Shop No 14, London Plaza, G-9 Markaz, Islamabad",
-  mapUrl:
-    "https://www.google.com/maps?q=" +
-    encodeURIComponent("shop no.14, london plaza, g9 markaz, Islamabad, Pakistan"),
+  mapUrl: `https://www.google.com/maps?q=${MAP_QUERY}`,
+  mapEmbedUrl: `https://www.google.com/maps?q=${MAP_QUERY}&output=embed`,
   hours: "Open daily · 10am – 8pm",
   currencySymbol: "PKR",
   social: [

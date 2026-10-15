@@ -14,6 +14,8 @@ export interface SiteInfo {
   address: string;
   /** Opens the shop location in a maps app. */
   mapUrl: string;
+  /** Embeddable version of the same location. */
+  mapEmbedUrl: string;
   hours: string;
   currencySymbol: string;
   social: SocialLink[];

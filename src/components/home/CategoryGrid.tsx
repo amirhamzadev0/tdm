@@ -1,10 +1,11 @@
 import Link from "next/link";
 import type { Category } from "@/models/category";
 import { pad2 } from "@/utils/format";
+import { SlideInOnView } from "../ui/SlideInOnView";
 
 export function CategoryGrid({ categories }: { categories: Category[] }) {
   return (
-    <div className="category-grid">
+    <SlideInOnView className="category-grid">
       {categories.map((category, index) => (
         <Link
           key={category.slug}
@@ -21,6 +22,6 @@ export function CategoryGrid({ categories }: { categories: Category[] }) {
           </div>
         </Link>
       ))}
-    </div>
+    </SlideInOnView>
   );
 }

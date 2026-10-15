@@ -9,7 +9,7 @@ export const getHomePageViewModel = cache(async () => {
       container.pages.getHome(),
       container.categories.list(),
       container.categories.listAllBrands(),
-      container.products.listOnSale(4),
+      container.products.listOnSale(6),
       container.products.listFeatured(8),
       container.repairs.list(),
       container.offers.list(),

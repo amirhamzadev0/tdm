@@ -1,5 +1,6 @@
 import { site } from "@/config/site";
 import { phoneHref } from "@/utils/format";
+import { MapPreview } from "../maps/MapPreview";
 import { StarGrid } from "../ui/StarGrid";
 import { BookingForm } from "./BookingForm";
 
@@ -40,6 +41,7 @@ export function BookingPanel({
           </h2>
           <p className="booking__summary">{summary}</p>
         </div>
+        <MapPreview />
         <div className="booking__details">
           {site.hours}
           <br />
