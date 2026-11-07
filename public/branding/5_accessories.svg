@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" font-family="Inter, DejaVu Sans, sans-serif">
+<defs>
+ <clipPath id="c"><path d="M70,150 Q40,158 40,190 L40,650 Q40,700 90,692 L1110,600 Q1160,594 1160,550 L1160,100 Q1160,50 1110,58 L90,142 Q80,143 70,150 Z"/></clipPath>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0e4a43"/><stop offset="1" stop-color="#06100f"/></linearGradient>
+ <radialGradient id="gl" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#22d3a0" stop-opacity=".75"/><stop offset="1" stop-color="#22d3a0" stop-opacity="0"/></radialGradient>
+ <linearGradient id="shade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000" stop-opacity=".78"/><stop offset=".55" stop-color="#000" stop-opacity=".15"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="14"/></filter>
+ <filter id="soft"><feGaussianBlur stdDeviation="3"/></filter>
+ <filter id="drop" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="22" stdDeviation="18" flood-color="#000" flood-opacity=".55"/></filter>
+</defs>
+<g clip-path="url(#c)">
+ <rect width="1200" height="750" fill="url(#bg)"/>
+ <ellipse cx="830" cy="380" rx="420" ry="330" fill="url(#gl)"/>
+ <g opacity=".12" stroke="#fff"><line x1="0" y1="260" x2="1200" y2="170"/><line x1="0" y1="330" x2="1200" y2="240"/><line x1="0" y1="400" x2="1200" y2="310"/><line x1="0" y1="470" x2="1200" y2="380"/><line x1="0" y1="540" x2="1200" y2="450"/><line x1="0" y1="610" x2="1200" y2="520"/><line x1="0" y1="680" x2="1200" y2="590"/><line x1="0" y1="750" x2="1200" y2="660"/><line x1="0" y1="820" x2="1200" y2="730"/><line x1="0" y1="890" x2="1200" y2="800"/></g>
+ <g filter="url(#drop)">
+ <g transform="translate(760 130) rotate(-10)">
+  <rect x="55" y="-60" width="90" height="140" rx="20" fill="#2c3340"/>
+  <rect x="55" y="320" width="90" height="150" rx="20" fill="#2c3340"/>
+  <rect x="0" y="40" width="200" height="260" rx="56" fill="#aeb6c2"/>
+  <rect x="9" y="49" width="182" height="242" rx="48" fill="#0b0d12"/>
+  <circle cx="100" cy="170" r="76" fill="none" stroke="#22d3a0" stroke-width="12"/>
+  <circle cx="100" cy="170" r="56" fill="none" stroke="#38bdf8" stroke-width="12" stroke-dasharray="230 120"/>
+  <text x="100" y="182" text-anchor="middle" font-size="40" font-weight="300" fill="#fff">10:09</text>
+  <rect x="198" y="120" width="12" height="40" rx="6" fill="#8b93a1"/>
+ </g>
+ <g transform="translate(1000 400) rotate(8)">
+  <rect width="170" height="120" rx="48" fill="#e8ebf0"/><rect x="0" y="52" width="170" height="3" fill="#b5bcc8"/>
+  <circle cx="85" cy="90" r="6" fill="#22d3a0"/>
+ </g>
+ <g transform="translate(960 290) rotate(-20)"><ellipse rx="36" ry="30" fill="#f4f6f9"/><rect x="14" y="14" width="18" height="70" rx="9" fill="#f4f6f9"/><circle cx="-8" cy="-2" r="8" fill="#cfd5de"/></g>
+ <g transform="translate(1080 300) rotate(20) scale(-1 1)"><ellipse rx="36" ry="30" fill="#f4f6f9"/><rect x="14" y="14" width="18" height="70" rx="9" fill="#f4f6f9"/><circle cx="-8" cy="-2" r="8" fill="#cfd5de"/></g>
+</g>
+ <rect width="1200" height="750" fill="url(#shade)"/>
+ <text x="90" y="300" font-size="30" font-weight="400" fill="#fff" fill-opacity=".85" letter-spacing="2">CATEGORY 05</text>
+ <text x="86" y="385" font-size="92" font-weight="800" fill="#fff" letter-spacing="-2">ACCESSORIES</text>
+ <rect x="90" y="215" width="133" height="38" rx="19" fill="#ffffff" fill-opacity=".10" stroke="#ffffff" stroke-opacity=".35"/><text x="156.5" y="240" text-anchor="middle" font-size="16" font-weight="600" fill="#fff">Top Picks</text>
+ <rect x="90" y="560" width="177" height="38" rx="19" fill="#ffffff" fill-opacity=".10" stroke="#ffffff" stroke-opacity=".35"/><text x="178.5" y="585" text-anchor="middle" font-size="16" font-weight="600" fill="#fff">Smart Watches</text><rect x="279" y="560" width="210" height="38" rx="19" fill="#ffffff" fill-opacity=".10" stroke="#ffffff" stroke-opacity=".35"/><text x="384.0" y="585" text-anchor="middle" font-size="16" font-weight="600" fill="#fff">Wireless Earbuds</text>
+</g>
+<path d="M70,150 Q40,158 40,190 L40,650 Q40,700 90,692 L1110,600 Q1160,594 1160,550 L1160,100 Q1160,50 1110,58 L90,142 Q80,143 70,150 Z" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="2"/>
+</svg>

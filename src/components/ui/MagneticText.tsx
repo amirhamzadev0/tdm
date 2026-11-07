@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, type ElementType } from "react";
+import { useEffect, useRef, type CSSProperties, type ElementType } from "react";
 
 export type MagneticSegment = { text: string; className?: string } | { lineBreak: true };
 
@@ -46,6 +46,12 @@ export function MagneticText({
 }: MagneticTextProps) {
   const rootRef = useRef<HTMLElement>(null);
   const parts: MagneticSegment[] = segments ?? splitForAccent(text ?? "", accentLastWord);
+  // Position of each letter along the whole title (0..1) so CSS can colour it from a gradient.
+  const letterTotal = parts.reduce(
+    (sum, part) => sum + ("text" in part ? part.text.replace(/s+/g, "").length : 0),
+    0,
+  );
+  let letterIndex = 0;
   const label = parts
     .map((part) => ("text" in part ? part.text : " "))
     .join("")
@@ -141,11 +147,20 @@ export function MagneticText({
                 token
               ) : (
                 <span key={tokenIndex} className="magnetic-word">
-                  {Array.from(token).map((character, characterIndex) => (
-                    <span key={characterIndex} data-letter className="magnetic-letter">
-                      {character}
-                    </span>
-                  ))}
+                  {Array.from(token).map((character, characterIndex) => {
+                    const position = letterTotal > 1 ? letterIndex / (letterTotal - 1) : 0;
+                    letterIndex += 1;
+                    return (
+                      <span
+                        key={characterIndex}
+                        data-letter
+                        className="magnetic-letter"
+                        style={{ "--p": position.toFixed(3) } as CSSProperties}
+                      >
+                        {character}
+                      </span>
+                    );
+                  })}
                 </span>
               ),
             )}

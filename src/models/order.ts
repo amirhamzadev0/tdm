@@ -1,5 +1,5 @@
 export type ShippingMethodId = "standard" | "express" | "pickup";
-export type PaymentMethodId = "cod" | "bkash" | "nagad" | "bank";
+export type PaymentMethodId = "cod" | "bank";
 
 export interface ShippingMethod {
   id: ShippingMethodId;
@@ -22,6 +22,8 @@ export interface CartItem {
   name: string;
   price: number;
   quantity: number;
+  /** Product picture shown in the cart and checkout. Missing on older saved carts. */
+  image?: string | null;
 }
 
 export type OrderStatus = "new" | "confirmed" | "shipped" | "delivered";

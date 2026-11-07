@@ -1,6 +1,6 @@
 "use client";
 
-import { ShoppingCart } from "lucide-react";
+import { ShoppingBag } from "lucide-react";
 import { useCart } from "./CartProvider";
 
 export function CartButton() {
@@ -9,13 +9,12 @@ export function CartButton() {
   return (
     <button
       type="button"
-      className="cart-button"
+      className="hbar__icon cart-button"
       onClick={open}
       aria-label={`Open cart, ${count} items`}
     >
-      <ShoppingCart size={16} aria-hidden="true" />
-      <span className="cart-button__label">Cart</span>
-      <b className="cart-button__count">{count}</b>
+      <ShoppingBag size={20} aria-hidden="true" />
+      {count > 0 ? <b className="cart-button__count">{count}</b> : null}
     </button>
   );
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import { otherRepairService } from "@/config/commerce";
 import { useBookingViewModel } from "@/viewmodels/useBookingViewModel";
 import { Button } from "../ui/Button";
 import { SelectField, TextAreaField, TextField } from "./Field";
@@ -11,6 +12,8 @@ interface BookingFormProps {
 
 export function BookingForm({ serviceTitles, defaultService }: BookingFormProps) {
   const vm = useBookingViewModel(serviceTitles, defaultService);
+  const serviceOptions = [...serviceTitles, otherRepairService];
+  const isOther = vm.form.service === otherRepairService;
 
   return (
     <form className="form card" onSubmit={vm.onSubmit} noValidate>
@@ -52,7 +55,7 @@ export function BookingForm({ serviceTitles, defaultService }: BookingFormProps)
       />
       <SelectField
         label="Service"
-        options={serviceTitles}
+        options={serviceOptions}
         value={vm.form.service}
         onChange={(value) => vm.setField("service", value)}
         error={vm.fieldError("service")}
@@ -67,7 +70,9 @@ export function BookingForm({ serviceTitles, defaultService }: BookingFormProps)
         required
       />
       <TextAreaField
-        label="Describe the problem"
+        label={isOther ? "Describe what needs repairing" : "Describe the problem"}
+        placeholder={isOther ? "Tell us what device part or fault you need help with" : undefined}
+        required={isOther}
         value={vm.form.problem}
         onChange={(value) => vm.setField("problem", value)}
         error={vm.fieldError("problem")}

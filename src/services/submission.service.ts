@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { paymentMethods } from "@/config/commerce";
+import { otherRepairService, paymentMethods } from "@/config/commerce";
 import type { SubmissionReceipt } from "@/models/submission";
 import type { SubmissionRepository } from "@/repositories/contracts";
 
@@ -8,14 +8,20 @@ const requiredText = (label: string, max: number) =>
   z.string().trim().min(1, `${label} is required`).max(max);
 const optionalText = (max: number) => z.string().trim().max(max).default("");
 
-export const bookingSchema = z.object({
-  fullName: requiredText("Name", 120),
-  phone,
-  device: requiredText("Device", 120),
-  service: requiredText("Service", 120),
-  preferredAt: requiredText("Preferred time", 40),
-  problem: optionalText(2000),
-});
+export const bookingSchema = z
+  .object({
+    fullName: requiredText("Name", 120),
+    phone,
+    device: requiredText("Device", 120),
+    service: requiredText("Service", 120),
+    preferredAt: requiredText("Preferred time", 40),
+    problem: optionalText(2000),
+  })
+  // "Other" is only useful if we know what to repair.
+  .refine((booking) => booking.service !== otherRepairService || booking.problem.length > 0, {
+    message: "Tell us what needs repairing",
+    path: ["problem"],
+  });
 
 export const contactSchema = z.object({
   fullName: requiredText("Name", 120),
@@ -35,7 +41,7 @@ export const orderSchema = z
     area: optionalText(100),
     notes: optionalText(500),
     shippingMethod: z.enum(["standard", "express", "pickup"]),
-    paymentMethod: z.enum(["cod", "bkash", "nagad", "bank"]),
+    paymentMethod: z.enum(["cod", "bank"]),
     paymentReference: optionalText(120),
     items: z
       .array(

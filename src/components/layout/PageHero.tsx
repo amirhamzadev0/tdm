@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { MagneticText } from "../ui/MagneticText";
-import { StarGrid } from "../ui/StarGrid";
 
 interface Crumb {
   label: string;
@@ -17,7 +16,6 @@ interface PageHeroProps {
 export function PageHero({ eyebrow, title, summary, crumbs }: PageHeroProps) {
   return (
     <div className="page-hero">
-      <StarGrid />
       <div className="container page-hero__inner">
         {crumbs ? (
           <nav className="breadcrumbs" aria-label="Breadcrumb">

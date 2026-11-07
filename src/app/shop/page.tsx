@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { BrandMarquee } from "@/components/brands/BrandMarquee";
-import { PageHero } from "@/components/layout/PageHero";
+import { CategoryBanner, CategoryHead } from "@/components/layout/CategoryBanner";
 import { ProductCatalog } from "@/components/shop/ProductCatalog";
 import { Section } from "@/components/ui/Section";
 import { routeSeo } from "@/config/seo";
@@ -25,12 +25,14 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
 
   return (
     <>
-      <PageHero
+      <CategoryBanner id="shop" />
+      <CategoryHead
         title="Shop all devices"
-        summary="New, used and refurbished mobiles, laptops, computers, accessories and gadgets."
+        summary="New and used mobiles, laptops, computers and accessories."
+        crumbs={[{ label: "Home", href: "/" }, { label: "Shop" }]}
       />
       <BrandMarquee brands={brands} />
-      <Section>
+      <Section id="products">
         <Suspense fallback={<p className="catalog__status">Loading devices…</p>}>
           <ShopCatalogSection searchParams={searchParams} />
         </Suspense>

@@ -13,6 +13,8 @@ interface ProductCatalogProps {
   categories: Category[];
   /** Fixes the category filter (used on category pages). */
   lockedCategory?: string;
+  /** Fixes the section of the category (used on section pages). */
+  lockedSubcategory?: string;
   /** Search term the server used to render `initial`. */
   initialSearch?: string;
 }
@@ -21,16 +23,16 @@ const conditionOptions: { value: ProductCondition | ""; label: string }[] = [
   { value: "", label: "All" },
   { value: "new", label: "New" },
   { value: "used", label: "Used" },
-  { value: "refurbished", label: "Refurbished" },
 ];
 
 export function ProductCatalog({
   initial,
   categories,
   lockedCategory,
+  lockedSubcategory,
   initialSearch,
 }: ProductCatalogProps) {
-  const vm = useShopViewModel({ initial, lockedCategory, initialSearch });
+  const vm = useShopViewModel({ initial, lockedCategory, lockedSubcategory, initialSearch });
   const { result } = vm;
 
   return (

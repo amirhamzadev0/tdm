@@ -1,6 +1,7 @@
 "use client";
 
-import { Minus, Plus, X } from "lucide-react";
+import { Minus, Plus, ShoppingBag, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 import { formatPrice } from "@/utils/format";
@@ -34,12 +35,36 @@ export function CartDrawer() {
 
         <div className="cart-drawer__lines">
           {isEmpty ? (
-            <p className="cart-drawer__empty">Nothing here yet.</p>
+            <div className="cart-drawer__empty">
+              <ShoppingBag size={40} aria-hidden="true" />
+              <p>Your cart is empty.</p>
+              <div onClick={close}>
+                <ButtonLink href="/shop">Browse devices</ButtonLink>
+              </div>
+            </div>
           ) : (
             <ul>
               {items.map((item) => (
                 <li key={item.productId} className="cart-line">
-                  <div>
+                  <Link
+                    href={`/shop/${item.slug}`}
+                    className="cart-line__media"
+                    onClick={close}
+                    aria-label={item.name}
+                  >
+                    {item.image ? (
+                      <Image
+                        src={item.image}
+                        alt=""
+                        fill
+                        sizes="72px"
+                        className="cart-line__image"
+                      />
+                    ) : (
+                      <ShoppingBag size={22} aria-hidden="true" />
+                    )}
+                  </Link>
+                  <div className="cart-line__body">
                     <Link href={`/shop/${item.slug}`} className="cart-line__name" onClick={close}>
                       {item.name}
                     </Link>
@@ -64,32 +89,39 @@ export function CartDrawer() {
                       </button>
                     </div>
                   </div>
-                  <button
-                    type="button"
-                    className="link-button"
-                    onClick={() => remove(item.productId)}
-                  >
-                    Remove
-                  </button>
+                  <div className="cart-line__side">
+                    <b>{formatPrice(item.price * item.quantity)}</b>
+                    <button
+                      type="button"
+                      className="link-button"
+                      onClick={() => remove(item.productId)}
+                    >
+                      Remove
+                    </button>
+                  </div>
                 </li>
               ))}
             </ul>
           )}
         </div>
 
-        <div className="cart-drawer__footer">
-          <div className="cart-drawer__total">
-            <span>Total</span>
-            <b>{formatPrice(subtotal)}</b>
-          </div>
-          {isEmpty ? null : (
+        {isEmpty ? null : (
+          <div className="cart-drawer__footer">
+            <div className="cart-drawer__total">
+              <span>Subtotal</span>
+              <b>{formatPrice(subtotal)}</b>
+            </div>
+            <p className="cart-drawer__note">Delivery is added at checkout.</p>
             <div onClick={close}>
               <ButtonLink href="/checkout" block>
                 Checkout
               </ButtonLink>
             </div>
-          )}
-        </div>
+            <button type="button" className="cart-drawer__continue" onClick={close}>
+              Continue shopping
+            </button>
+          </div>
+        )}
       </aside>
     </>
   );

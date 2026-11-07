@@ -1,6 +1,6 @@
 import type { ContentBlock } from "./content";
 
-export type ProductCondition = "new" | "used" | "refurbished";
+export type ProductCondition = "new" | "used";
 
 export interface Product {
   id: string;
@@ -16,8 +16,16 @@ export interface Product {
   condition: ProductCondition;
   /** Category slug. */
   category: string;
+  /** Section inside the category (devices, accessories or parts), when it has sections. */
+  subcategory?: string;
   image: string | null;
+  /** Extra pictures for the product page; falls back to `image`. */
+  gallery?: string[];
+  /** Average star rating out of 5, when known. */
+  rating?: number;
   featured: boolean;
+  /** Shown in the Best Sellers row on the home page. */
+  bestSeller?: boolean;
   body: ContentBlock[];
   order: number;
 }

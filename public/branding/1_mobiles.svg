@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" font-family="Inter, DejaVu Sans, sans-serif">
+<defs>
+ <clipPath id="c"><path d="M70,150 Q40,158 40,190 L40,650 Q40,700 90,692 L1110,600 Q1160,594 1160,550 L1160,100 Q1160,50 1110,58 L90,142 Q80,143 70,150 Z"/></clipPath>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a1d6e"/><stop offset="1" stop-color="#0c0a1a"/></linearGradient>
+ <radialGradient id="gl" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#8a5bff" stop-opacity=".75"/><stop offset="1" stop-color="#8a5bff" stop-opacity="0"/></radialGradient>
+ <linearGradient id="shade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000" stop-opacity=".78"/><stop offset=".55" stop-color="#000" stop-opacity=".15"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="14"/></filter>
+ <filter id="soft"><feGaussianBlur stdDeviation="3"/></filter>
+ <filter id="drop" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="22" stdDeviation="18" flood-color="#000" flood-opacity=".55"/></filter>
+</defs>
+<g clip-path="url(#c)">
+ <rect width="1200" height="750" fill="url(#bg)"/>
+ <ellipse cx="830" cy="380" rx="420" ry="330" fill="url(#gl)"/>
+ <g opacity=".12" stroke="#fff"><line x1="0" y1="260" x2="1200" y2="170"/><line x1="0" y1="330" x2="1200" y2="240"/><line x1="0" y1="400" x2="1200" y2="310"/><line x1="0" y1="470" x2="1200" y2="380"/><line x1="0" y1="540" x2="1200" y2="450"/><line x1="0" y1="610" x2="1200" y2="520"/><line x1="0" y1="680" x2="1200" y2="590"/><line x1="0" y1="750" x2="1200" y2="660"/><line x1="0" y1="820" x2="1200" y2="730"/><line x1="0" y1="890" x2="1200" y2="800"/></g>
+ <g transform="translate(860 400) rotate(-9)" filter="url(#drop)">
+ <rect x="-135" y="-270" width="270" height="540" rx="46" fill="#cfd3d9"/>
+ <rect x="-130" y="-265" width="260" height="530" rx="42" fill="#8e949d"/>
+ <rect x="-122" y="-257" width="244" height="514" rx="36" fill="#0b0d12"/>
+ <defs><linearGradient id="wp" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff7a59"/><stop offset=".5" stop-color="#b13cff"/><stop offset="1" stop-color="#2a6bff"/></linearGradient></defs>
+ <rect x="-114" y="-249" width="228" height="498" rx="30" fill="url(#wp)"/>
+ <circle cx="40" cy="30" r="95" fill="#fff" fill-opacity=".14"/><circle cx="-50" cy="140" r="120" fill="#fff" fill-opacity=".10"/>
+ <rect x="-38" y="-236" width="76" height="24" rx="12" fill="#05060a"/>
+ <text x="0" y="-130" text-anchor="middle" font-size="70" font-weight="300" fill="#fff">9:41</text>
+ <text x="0" y="-98" text-anchor="middle" font-size="16" fill="#fff" fill-opacity=".85">Friday, 6 November</text>
+ <rect x="-96" y="150" width="192" height="70" rx="20" fill="#fff" fill-opacity=".18"/>
+ <g transform="translate(150 -190)"><rect x="-6" y="-40" width="92" height="104" rx="26" fill="#2b2e35"/>
+  <circle cx="22" cy="-8" r="19" fill="#111" stroke="#555" stroke-width="3"/><circle cx="22" cy="-8" r="9" fill="#243a66"/>
+  <circle cx="62" cy="-8" r="19" fill="#111" stroke="#555" stroke-width="3"/><circle cx="62" cy="-8" r="9" fill="#243a66"/>
+  <circle cx="42" cy="32" r="19" fill="#111" stroke="#555" stroke-width="3"/><circle cx="42" cy="32" r="9" fill="#243a66"/></g>
+</g>
+ <rect width="1200" height="750" fill="url(#shade)"/>
+ <text x="90" y="300" font-size="30" font-weight="400" fill="#fff" fill-opacity=".85" letter-spacing="2">CATEGORY 01</text>
+ <text x="86" y="385" font-size="92" font-weight="800" fill="#fff" letter-spacing="-2">MOBILES</text>
+ <rect x="90" y="215" width="166" height="38" rx="19" fill="#ffffff" fill-opacity=".10" stroke="#ffffff" stroke-opacity=".35"/><text x="173.0" y="240" text-anchor="middle" font-size="16" font-weight="600" fill="#fff">New Arrivals</text>
+ <rect x="90" y="560" width="210" height="38" rx="19" fill="#ffffff" fill-opacity=".10" stroke="#ffffff" stroke-opacity=".35"/><text x="195.0" y="585" text-anchor="middle" font-size="16" font-weight="600" fill="#fff">Latest Flagships</text><rect x="312" y="560" width="221" height="38" rx="19" fill="#ffffff" fill-opacity=".10" stroke="#ffffff" stroke-opacity=".35"/><text x="422.5" y="585" text-anchor="middle" font-size="16" font-weight="600" fill="#fff">Original Warranty</text>
+</g>
+<path d="M70,150 Q40,158 40,190 L40,650 Q40,700 90,692 L1110,600 Q1160,594 1160,550 L1160,100 Q1160,50 1110,58 L90,142 Q80,143 70,150 Z" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="2"/>
+</svg>

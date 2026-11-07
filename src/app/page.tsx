@@ -1,20 +1,20 @@
 import { BookingPanel } from "@/components/forms/BookingPanel";
 import { BrandMarquee } from "@/components/brands/BrandMarquee";
-import { CategoryGrid } from "@/components/home/CategoryGrid";
-import { FlashSale } from "@/components/home/FlashSale";
+import { CategoryShowcase } from "@/components/home/CategoryShowcase";
 import { HeroSection } from "@/components/home/HeroSection";
-import { OfferingGrid } from "@/components/home/OfferingGrid";
+import { OfferingCards } from "@/components/home/OfferingCards";
+import { RepairGuide } from "@/components/home/RepairGuide";
+import { ProductRail } from "@/components/home/ProductRail";
 import { TrustStrip } from "@/components/home/TrustStrip";
-import { OfferGrid } from "@/components/offers/OfferGrid";
-import { RepairProcess } from "@/components/repair/RepairProcess";
-import { RepairServiceList } from "@/components/repair/RepairServiceList";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { ProductCard } from "@/components/shop/ProductCard";
 import { ProductGrid } from "@/components/shop/ProductGrid";
 import { ButtonLink } from "@/components/ui/Button";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { routeSeo } from "@/config/seo";
 import { buildMetadata, organizationSchema } from "@/lib/seo";
+import { discountPercent } from "@/utils/format";
 import { getHomePageViewModel } from "@/viewmodels/home.viewmodel";
 import { getRepairPageViewModel } from "@/viewmodels/repair.viewmodel";
 
@@ -30,23 +30,36 @@ export default async function HomePage() {
 
       <HeroSection hero={content.hero} />
       <TrustStrip items={content.trust} />
+      <CategoryShowcase />
+
+      <ProductRail id="new-arrivals" title="New Arrivals" href="/shop">
+        {home.newArrivals.map((product) => (
+          <ProductCard key={product.id} product={product} ribbon="Newly launched" />
+        ))}
+      </ProductRail>
+
+      <ProductRail id="best-sellers" title="Best Sellers" href="/shop">
+        {home.bestSellers.map((product) => (
+          <ProductCard key={product.id} product={product} ribbon="Best seller" />
+        ))}
+      </ProductRail>
+
+      <ProductRail id="offers" title="Offers" href="/shop">
+        {home.dealItems.map((product) => (
+          <ProductCard
+            key={product.id}
+            product={product}
+            ribbon={`${discountPercent(product.price, product.oldPrice)}% off`}
+          />
+        ))}
+      </ProductRail>
 
       <Section>
         <SectionHeading title={content.offerings.heading} />
-        <OfferingGrid items={content.offerings.items} />
+        <OfferingCards items={content.offerings.items} />
       </Section>
 
       <BrandMarquee brands={home.brands} />
-
-      <Section id="categories">
-        <SectionHeading title={content.categoriesHeading} />
-        <CategoryGrid categories={home.categories} />
-      </Section>
-
-      <Section id="sale">
-        <SectionHeading title={content.flashSaleHeading} />
-        <FlashSale products={home.saleItems} />
-      </Section>
 
       <Section id="shop">
         <SectionHeading title={content.featuredHeading} />
@@ -58,16 +71,7 @@ export default async function HomePage() {
         </div>
       </Section>
 
-      <Section id="repair" tone="navy">
-        <SectionHeading title={content.repairHeading} summary={content.repairSummary} />
-        <RepairProcess steps={repair.content.process} />
-        <RepairServiceList services={home.repairServices} />
-      </Section>
-
-      <Section id="offers">
-        <SectionHeading title={content.offersHeading} />
-        <OfferGrid offers={home.offers} />
-      </Section>
+      <RepairGuide services={home.repairServices} promises={repair.content.guarantees} />
 
       <Section id="book">
         <BookingPanel

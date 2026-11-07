@@ -8,7 +8,7 @@
     "oldPrice": 128000,
     "condition": "used",
     "category": "mobiles",
-    "image": null,
+    "image": "/products/mobiles.svg",
     "featured": true,
     "body": [
       {
@@ -39,7 +39,9 @@
       }
     ],
     "order": 1,
-    "brand": "Apple"
+    "brand": "Apple",
+    "rating": 5,
+    "subcategory": "devices"
   },
   {
     "id": "p-02",
@@ -50,7 +52,7 @@
     "oldPrice": null,
     "condition": "new",
     "category": "mobiles",
-    "image": null,
+    "image": "/products/mobiles.svg",
     "featured": true,
     "body": [
       {
@@ -81,7 +83,10 @@
       }
     ],
     "order": 2,
-    "brand": "Samsung"
+    "brand": "Samsung",
+    "rating": 4.9,
+    "bestSeller": true,
+    "subcategory": "devices"
   },
   {
     "id": "p-03",
@@ -92,7 +97,7 @@
     "oldPrice": 33000,
     "condition": "new",
     "category": "mobiles",
-    "image": null,
+    "image": "/products/mobiles.svg",
     "featured": true,
     "body": [
       {
@@ -123,7 +128,10 @@
       }
     ],
     "order": 3,
-    "brand": "Xiaomi"
+    "brand": "Xiaomi",
+    "rating": 4.8,
+    "bestSeller": true,
+    "subcategory": "devices"
   },
   {
     "id": "p-04",
@@ -134,7 +142,7 @@
     "oldPrice": 60000,
     "condition": "used",
     "category": "mobiles",
-    "image": null,
+    "image": "/products/mobiles.svg",
     "featured": true,
     "body": [
       {
@@ -165,7 +173,9 @@
       }
     ],
     "order": 4,
-    "brand": "Apple"
+    "brand": "Apple",
+    "rating": 4.7,
+    "subcategory": "devices"
   },
   {
     "id": "p-05",
@@ -174,9 +184,9 @@
     "spec": "12GB · 256GB · 108MP",
     "price": 78000,
     "oldPrice": 90000,
-    "condition": "refurbished",
+    "condition": "used",
     "category": "mobiles",
-    "image": null,
+    "image": "/products/mobiles.svg",
     "featured": true,
     "body": [
       {
@@ -200,14 +210,16 @@
       {
         "type": "list",
         "items": [
-          "Tested and refurbished by our repair desk",
+          "Tested by our repair desk",
           "Free diagnosis support from our repair desk",
           "Warranty terms confirmed in store"
         ]
       }
     ],
     "order": 5,
-    "brand": "Samsung"
+    "brand": "Samsung",
+    "rating": 4.9,
+    "subcategory": "devices"
   },
   {
     "id": "p-06",
@@ -218,7 +230,7 @@
     "oldPrice": 45000,
     "condition": "used",
     "category": "laptops",
-    "image": null,
+    "image": "/products/laptops.png",
     "featured": true,
     "body": [
       {
@@ -249,7 +261,10 @@
       }
     ],
     "order": 6,
-    "brand": "Lenovo"
+    "brand": "Lenovo",
+    "rating": 5,
+    "bestSeller": true,
+    "subcategory": "devices"
   },
   {
     "id": "p-07",
@@ -258,9 +273,9 @@
     "spec": "8GB · 256GB · 13.3\" Retina",
     "price": 89000,
     "oldPrice": 99000,
-    "condition": "refurbished",
+    "condition": "used",
     "category": "laptops",
-    "image": null,
+    "image": "/products/laptops.png",
     "featured": true,
     "body": [
       {
@@ -284,14 +299,17 @@
       {
         "type": "list",
         "items": [
-          "Tested and refurbished by our repair desk",
+          "Tested by our repair desk",
           "Free diagnosis support from our repair desk",
           "Warranty terms confirmed in store"
         ]
       }
     ],
     "order": 7,
-    "brand": "Apple"
+    "brand": "Apple",
+    "rating": 4.6,
+    "bestSeller": true,
+    "subcategory": "devices"
   },
   {
     "id": "p-08",
@@ -302,7 +320,7 @@
     "oldPrice": null,
     "condition": "new",
     "category": "laptops",
-    "image": null,
+    "image": "/products/laptops.png",
     "featured": true,
     "body": [
       {
@@ -333,7 +351,9 @@
       }
     ],
     "order": 8,
-    "brand": "HP"
+    "brand": "HP",
+    "rating": 4.8,
+    "subcategory": "devices"
   },
   {
     "id": "p-09",
@@ -344,7 +364,7 @@
     "oldPrice": 110000,
     "condition": "new",
     "category": "laptops",
-    "image": null,
+    "image": "/products/laptops.png",
     "featured": false,
     "body": [
       {
@@ -375,7 +395,9 @@
       }
     ],
     "order": 9,
-    "brand": "ASUS"
+    "brand": "ASUS",
+    "rating": 5,
+    "subcategory": "devices"
   },
   {
     "id": "p-10",
@@ -386,7 +408,7 @@
     "oldPrice": 28000,
     "condition": "used",
     "category": "computers",
-    "image": null,
+    "image": "/products/computers.png",
     "featured": false,
     "body": [
       {
@@ -417,7 +439,10 @@
       }
     ],
     "order": 10,
-    "brand": "Dell"
+    "brand": "Dell",
+    "rating": 4.9,
+    "bestSeller": true,
+    "subcategory": "devices"
   },
   {
     "id": "p-11",
@@ -428,7 +453,7 @@
     "oldPrice": null,
     "condition": "new",
     "category": "computers",
-    "image": null,
+    "image": "/products/computers.png",
     "featured": false,
     "body": [
       {
@@ -459,7 +484,10 @@
       }
     ],
     "order": 11,
-    "brand": "AMD"
+    "brand": "AMD",
+    "rating": 4.8,
+    "bestSeller": true,
+    "subcategory": "devices"
   },
   {
     "id": "p-12",
@@ -468,9 +496,9 @@
     "spec": "i7 6th · 16GB · 512GB SSD",
     "price": 32000,
     "oldPrice": 37000,
-    "condition": "refurbished",
+    "condition": "used",
     "category": "computers",
-    "image": null,
+    "image": "/products/computers.png",
     "featured": false,
     "body": [
       {
@@ -494,14 +522,16 @@
       {
         "type": "list",
         "items": [
-          "Tested and refurbished by our repair desk",
+          "Tested by our repair desk",
           "Free diagnosis support from our repair desk",
           "Warranty terms confirmed in store"
         ]
       }
     ],
     "order": 12,
-    "brand": "HP"
+    "brand": "HP",
+    "rating": 4.7,
+    "subcategory": "devices"
   },
   {
     "id": "p-13",
@@ -512,7 +542,7 @@
     "oldPrice": 2800,
     "condition": "new",
     "category": "accessories",
-    "image": null,
+    "image": "/products/accessories.png",
     "featured": false,
     "body": [
       {
@@ -543,7 +573,9 @@
       }
     ],
     "order": 13,
-    "brand": "Anker"
+    "brand": "Anker",
+    "rating": 4.9,
+    "bestSeller": true
   },
   {
     "id": "p-14",
@@ -554,7 +586,7 @@
     "oldPrice": null,
     "condition": "new",
     "category": "accessories",
-    "image": null,
+    "image": "/products/accessories.png",
     "featured": false,
     "body": [
       {
@@ -585,7 +617,8 @@
       }
     ],
     "order": 14,
-    "brand": null
+    "brand": null,
+    "rating": 5
   },
   {
     "id": "p-15",
@@ -596,7 +629,7 @@
     "oldPrice": 1200,
     "condition": "new",
     "category": "accessories",
-    "image": null,
+    "image": "/products/accessories.png",
     "featured": false,
     "body": [
       {
@@ -627,7 +660,8 @@
       }
     ],
     "order": 15,
-    "brand": "Logitech"
+    "brand": "Logitech",
+    "rating": 4.6
   },
   {
     "id": "p-16",
@@ -637,8 +671,8 @@
     "price": 4500,
     "oldPrice": 5500,
     "condition": "new",
-    "category": "gadgets",
-    "image": null,
+    "category": "accessories",
+    "image": "/products/gadgets.svg",
     "featured": false,
     "body": [
       {
@@ -669,7 +703,9 @@
       }
     ],
     "order": 16,
-    "brand": "JBL"
+    "brand": "JBL",
+    "rating": 4.8,
+    "bestSeller": true
   },
   {
     "id": "p-17",
@@ -679,8 +715,8 @@
     "price": 6500,
     "oldPrice": 8000,
     "condition": "new",
-    "category": "gadgets",
-    "image": null,
+    "category": "accessories",
+    "image": "/products/gadgets.svg",
     "featured": false,
     "body": [
       {
@@ -711,7 +747,8 @@
       }
     ],
     "order": 17,
-    "brand": "Xiaomi"
+    "brand": "Xiaomi",
+    "rating": 5
   },
   {
     "id": "p-18",
@@ -721,8 +758,8 @@
     "price": 3200,
     "oldPrice": null,
     "condition": "new",
-    "category": "gadgets",
-    "image": null,
+    "category": "accessories",
+    "image": "/products/gadgets.svg",
     "featured": false,
     "body": [
       {
@@ -753,6 +790,1070 @@
       }
     ],
     "order": 18,
-    "brand": "Anker"
+    "brand": "Anker",
+    "rating": 4.9
+  },
+  {
+    "id": "p-19",
+    "slug": "20w-fast-charger",
+    "name": "20W Fast Charger",
+    "spec": "USB-C · 20W · Safe charging",
+    "price": 1800,
+    "oldPrice": 2200,
+    "condition": "new",
+    "category": "mobiles",
+    "subcategory": "accessories",
+    "image": "/products/accessories.png",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "20W Fast Charger from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["USB-C", "20W", "Safe charging"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 19,
+    "brand": "Anker",
+    "rating": 4.9,
+    "bestSeller": true
+  },
+  {
+    "id": "p-20",
+    "slug": "tempered-glass-protector",
+    "name": "Tempered Glass Protector",
+    "spec": "9H · Anti-scratch · Easy fit",
+    "price": 450,
+    "oldPrice": null,
+    "condition": "new",
+    "category": "mobiles",
+    "subcategory": "accessories",
+    "image": "/products/accessories.png",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Tempered Glass Protector from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["9H", "Anti-scratch", "Easy fit"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 20,
+    "brand": "Baseus",
+    "rating": 4.7
+  },
+  {
+    "id": "p-21",
+    "slug": "silicone-phone-case",
+    "name": "Silicone Phone Case",
+    "spec": "Soft grip · Shock proof",
+    "price": 650,
+    "oldPrice": 800,
+    "condition": "new",
+    "category": "mobiles",
+    "subcategory": "accessories",
+    "image": "/products/accessories.png",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Silicone Phone Case from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["Soft grip", "Shock proof"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 21,
+    "brand": "Ugreen",
+    "rating": 4.8
+  },
+  {
+    "id": "p-22",
+    "slug": "type-c-cable-1m",
+    "name": "Type-C Cable 1m",
+    "spec": "Fast charge · Braided",
+    "price": 600,
+    "oldPrice": null,
+    "condition": "new",
+    "category": "mobiles",
+    "subcategory": "accessories",
+    "image": "/products/accessories.png",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Type-C Cable 1m from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["Fast charge", "Braided"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 22,
+    "brand": "Anker",
+    "rating": 5
+  },
+  {
+    "id": "p-23",
+    "slug": "iphone-13-oled-screen",
+    "name": "iPhone 13 OLED Screen",
+    "spec": "OLED · Original quality · Tested",
+    "price": 18500,
+    "oldPrice": 21000,
+    "condition": "new",
+    "category": "mobiles",
+    "subcategory": "parts",
+    "image": "/products/parts-mobile.svg",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "iPhone 13 OLED Screen from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["OLED", "Original quality", "Tested"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free fitting advice from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 23,
+    "brand": "Apple",
+    "rating": 4.6,
+    "bestSeller": true
+  },
+  {
+    "id": "p-24",
+    "slug": "samsung-a55-battery",
+    "name": "Samsung A55 Battery",
+    "spec": "5000mAh · Tested cells",
+    "price": 3200,
+    "oldPrice": null,
+    "condition": "new",
+    "category": "mobiles",
+    "subcategory": "parts",
+    "image": "/products/parts-mobile.svg",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Samsung A55 Battery from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["5000mAh", "Tested cells"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free fitting advice from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 24,
+    "brand": "Samsung",
+    "rating": 4.9
+  },
+  {
+    "id": "p-25",
+    "slug": "charging-port-flex-type-c",
+    "name": "Charging Port Flex Type-C",
+    "spec": "Type-C · Fits most models",
+    "price": 900,
+    "oldPrice": 1100,
+    "condition": "new",
+    "category": "mobiles",
+    "subcategory": "parts",
+    "image": "/products/parts-mobile.svg",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Charging Port Flex Type-C from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["Type-C", "Fits most models"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free fitting advice from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 25,
+    "brand": "Xiaomi",
+    "rating": 4.8
+  },
+  {
+    "id": "p-26",
+    "slug": "back-glass-panel",
+    "name": "Back Glass Panel",
+    "spec": "Original colour · Adhesive included",
+    "price": 2400,
+    "oldPrice": null,
+    "condition": "new",
+    "category": "mobiles",
+    "subcategory": "parts",
+    "image": "/products/parts-mobile.svg",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Back Glass Panel from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["Original colour", "Adhesive included"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free fitting advice from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 26,
+    "brand": "Samsung",
+    "rating": 4.7
+  },
+  {
+    "id": "p-27",
+    "slug": "laptop-sleeve-15-6",
+    "name": "Laptop Sleeve 15.6\"",
+    "spec": "Water-resistant · Fits 15.6\"",
+    "price": 1500,
+    "oldPrice": null,
+    "condition": "new",
+    "category": "laptops",
+    "subcategory": "accessories",
+    "image": "/products/accessories.png",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Laptop Sleeve 15.6\" from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["Water-resistant", "Fits 15.6\""]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 27,
+    "brand": "Logitech",
+    "rating": 4.9
+  },
+  {
+    "id": "p-28",
+    "slug": "laptop-cooling-pad",
+    "name": "Laptop Cooling Pad",
+    "spec": "Dual fan · Adjustable stand",
+    "price": 2800,
+    "oldPrice": 3200,
+    "condition": "new",
+    "category": "laptops",
+    "subcategory": "accessories",
+    "image": "/products/accessories.png",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Laptop Cooling Pad from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["Dual fan", "Adjustable stand"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 28,
+    "brand": "Razer",
+    "rating": 4.7,
+    "bestSeller": true
+  },
+  {
+    "id": "p-29",
+    "slug": "usb-c-hub-6-in-1",
+    "name": "USB-C Hub 6-in-1",
+    "spec": "HDMI · USB 3.0 · Card reader",
+    "price": 3500,
+    "oldPrice": null,
+    "condition": "new",
+    "category": "laptops",
+    "subcategory": "accessories",
+    "image": "/products/accessories.png",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "USB-C Hub 6-in-1 from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["HDMI", "USB 3.0", "Card reader"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 29,
+    "brand": "Ugreen",
+    "rating": 4.8
+  },
+  {
+    "id": "p-30",
+    "slug": "laptop-battery-thinkpad-t480",
+    "name": "Laptop Battery (ThinkPad T480)",
+    "spec": "Compatible · 6 cell · Tested",
+    "price": 6500,
+    "oldPrice": 7500,
+    "condition": "new",
+    "category": "laptops",
+    "subcategory": "parts",
+    "image": "/products/parts-laptop.svg",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Laptop Battery (ThinkPad T480) from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["Compatible", "6 cell", "Tested"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free fitting advice from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 30,
+    "brand": "Lenovo",
+    "rating": 5,
+    "bestSeller": true
+  },
+  {
+    "id": "p-31",
+    "slug": "14-led-laptop-screen",
+    "name": "14\" LED Laptop Screen",
+    "spec": "HD · 30 pin · 14\"",
+    "price": 9500,
+    "oldPrice": null,
+    "condition": "new",
+    "category": "laptops",
+    "subcategory": "parts",
+    "image": "/products/parts-laptop.svg",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "14\" LED Laptop Screen from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["HD", "30 pin", "14\""]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free fitting advice from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 31,
+    "brand": "Dell",
+    "rating": 4.6
+  },
+  {
+    "id": "p-32",
+    "slug": "8gb-ddr4-sodimm-ram",
+    "name": "8GB DDR4 SODIMM RAM",
+    "spec": "8GB · DDR4 · 3200MHz",
+    "price": 4200,
+    "oldPrice": null,
+    "condition": "new",
+    "category": "laptops",
+    "subcategory": "parts",
+    "image": "/products/parts-laptop.svg",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "8GB DDR4 SODIMM RAM from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["8GB", "DDR4", "3200MHz"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free fitting advice from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 32,
+    "brand": "Kingston",
+    "rating": 4.9,
+    "bestSeller": true
+  },
+  {
+    "id": "p-33",
+    "slug": "256gb-2-5-sata-ssd",
+    "name": "256GB 2.5\" SATA SSD",
+    "spec": "256GB · SATA · Fast boot",
+    "price": 5800,
+    "oldPrice": 6500,
+    "condition": "new",
+    "category": "laptops",
+    "subcategory": "parts",
+    "image": "/products/parts-laptop.svg",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "256GB 2.5\" SATA SSD from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["256GB", "SATA", "Fast boot"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free fitting advice from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 33,
+    "brand": "Kingston",
+    "rating": 4.8
+  },
+  {
+    "id": "p-34",
+    "slug": "laptop-keyboard-replacement",
+    "name": "Laptop Keyboard Replacement",
+    "spec": "Backlit options · Direct fit",
+    "price": 2200,
+    "oldPrice": null,
+    "condition": "new",
+    "category": "laptops",
+    "subcategory": "parts",
+    "image": "/products/parts-laptop.svg",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Laptop Keyboard Replacement from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["Backlit options", "Direct fit"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free fitting advice from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 34,
+    "brand": "HP",
+    "rating": 4.7
+  },
+  {
+    "id": "p-35",
+    "slug": "mechanical-keyboard-rgb",
+    "name": "Mechanical Keyboard RGB",
+    "spec": "RGB · Blue switches · USB",
+    "price": 6500,
+    "oldPrice": 7200,
+    "condition": "new",
+    "category": "computers",
+    "subcategory": "accessories",
+    "image": "/products/accessories.png",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Mechanical Keyboard RGB from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["RGB", "Blue switches", "USB"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 35,
+    "brand": "Razer",
+    "rating": 4.9
+  },
+  {
+    "id": "p-36",
+    "slug": "gaming-mouse-pad-xl",
+    "name": "Gaming Mouse Pad XL",
+    "spec": "XL · Anti-slip · Stitched edge",
+    "price": 1400,
+    "oldPrice": null,
+    "condition": "new",
+    "category": "computers",
+    "subcategory": "accessories",
+    "image": "/products/accessories.png",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Gaming Mouse Pad XL from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["XL", "Anti-slip", "Stitched edge"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 36,
+    "brand": "HyperX",
+    "rating": 4.7
+  },
+  {
+    "id": "p-37",
+    "slug": "hd-webcam-1080p",
+    "name": "HD Webcam 1080p",
+    "spec": "1080p · Built-in mic · USB",
+    "price": 4500,
+    "oldPrice": null,
+    "condition": "new",
+    "category": "computers",
+    "subcategory": "accessories",
+    "image": "/products/accessories.png",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "HD Webcam 1080p from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["1080p", "Built-in mic", "USB"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free diagnosis support from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 37,
+    "brand": "Logitech",
+    "rating": 4.8
+  },
+  {
+    "id": "p-38",
+    "slug": "rtx-3060-12gb-graphics-card",
+    "name": "RTX 3060 12GB Graphics Card",
+    "spec": "12GB GDDR6 · Dual fan · Tested",
+    "price": 78000,
+    "oldPrice": 85000,
+    "condition": "new",
+    "category": "computers",
+    "subcategory": "parts",
+    "image": "/products/parts-computer.svg",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "RTX 3060 12GB Graphics Card from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["12GB GDDR6", "Dual fan", "Tested"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free fitting advice from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 38,
+    "brand": "NVIDIA",
+    "rating": 5,
+    "bestSeller": true
+  },
+  {
+    "id": "p-39",
+    "slug": "16gb-ddr4-3200mhz-ram",
+    "name": "16GB DDR4 3200MHz RAM",
+    "spec": "16GB · DDR4 · 3200MHz",
+    "price": 8500,
+    "oldPrice": null,
+    "condition": "new",
+    "category": "computers",
+    "subcategory": "parts",
+    "image": "/products/parts-computer.svg",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "16GB DDR4 3200MHz RAM from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["16GB", "DDR4", "3200MHz"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free fitting advice from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 39,
+    "brand": "Corsair",
+    "rating": 4.6,
+    "bestSeller": true
+  },
+  {
+    "id": "p-40",
+    "slug": "1tb-nvme-ssd",
+    "name": "1TB NVMe SSD",
+    "spec": "1TB · NVMe · 3500MB/s",
+    "price": 13500,
+    "oldPrice": 15000,
+    "condition": "new",
+    "category": "computers",
+    "subcategory": "parts",
+    "image": "/products/parts-computer.svg",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "1TB NVMe SSD from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["1TB", "NVMe", "3500MB/s"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free fitting advice from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 40,
+    "brand": "Kingston",
+    "rating": 4.9
+  },
+  {
+    "id": "p-41",
+    "slug": "650w-80-power-supply",
+    "name": "650W 80+ Power Supply",
+    "spec": "650W · 80+ Bronze · Quiet fan",
+    "price": 9800,
+    "oldPrice": null,
+    "condition": "new",
+    "category": "computers",
+    "subcategory": "parts",
+    "image": "/products/parts-computer.svg",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "650W 80+ Power Supply from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["650W", "80+ Bronze", "Quiet fan"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free fitting advice from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 41,
+    "brand": "Corsair",
+    "rating": 4.8
+  },
+  {
+    "id": "p-42",
+    "slug": "b450-motherboard",
+    "name": "B450 Motherboard",
+    "spec": "AM4 · DDR4 · M.2 slot",
+    "price": 15500,
+    "oldPrice": 17500,
+    "condition": "new",
+    "category": "computers",
+    "subcategory": "parts",
+    "image": "/products/parts-computer.svg",
+    "featured": false,
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "B450 Motherboard from our counter, checked by the same technicians who run the repair desk."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Key specs"
+      },
+      {
+        "type": "list",
+        "items": ["AM4", "DDR4", "M.2 slot"]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What you get"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Brand new in the box",
+          "Free fitting advice from our repair desk",
+          "Warranty terms confirmed in store"
+        ]
+      }
+    ],
+    "order": 42,
+    "brand": "Gigabyte",
+    "rating": 4.7
   }
 ]

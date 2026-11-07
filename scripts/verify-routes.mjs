@@ -6,6 +6,7 @@ const ORIGIN = process.env.APP_ORIGIN ?? BASE;
 const routes = [
   "/",
   "/shop",
+  "/parts",
   "/offers",
   "/repair",
   "/contact",
@@ -18,8 +19,10 @@ const routes = [
     "laptops",
     "computers",
     "accessories",
-    "gadgets",
   ].map((slug) => `/category/${slug}`),
+  "/category/mobiles/parts",
+  "/category/laptops/accessories",
+  "/category/computers/devices",
   ...[
     "screen-replacement",
     "battery-replacement",

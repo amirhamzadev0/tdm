@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { PageHero } from "@/components/layout/PageHero";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ProductDetail } from "@/components/shop/ProductDetail";
 import { ProductGrid } from "@/components/shop/ProductGrid";
@@ -46,26 +45,16 @@ export default async function ProductPage({ params }: ProductPageProps) {
         ])}
       />
 
-      <PageHero
-        title={product.name}
-        crumbs={[
-          { label: "Home", href: "/" },
-          { label: "Shop", href: "/shop" },
-          ...(category ? [{ label: category.name, href: `/category/${category.slug}` }] : []),
-          { label: product.name },
-        ]}
-      />
-
-      <Section>
+      <div className="pdp-page">
         <ProductDetail product={product} category={category} />
-      </Section>
 
-      {related.length > 0 ? (
-        <Section>
-          <SectionHeading title="You may also like" />
-          <ProductGrid products={related} />
-        </Section>
-      ) : null}
+        {related.length > 0 ? (
+          <Section>
+            <SectionHeading title="You may also like" />
+            <ProductGrid products={related} />
+          </Section>
+        ) : null}
+      </div>
     </>
   );
 }

@@ -74,7 +74,6 @@ export function breadcrumbSchema(trail: { name: string; path: string }[]): JsonL
 const conditionSchemaUrl = {
   new: "https://schema.org/NewCondition",
   used: "https://schema.org/UsedCondition",
-  refurbished: "https://schema.org/RefurbishedCondition",
 } as const;
 
 export function productSchema(product: Product): JsonLdObject {

@@ -20,9 +20,9 @@ export default function NotFound() {
       <p className="page-hero__summary">
         The page you are looking for does not exist or has moved. Try the shop or book a repair.
       </p>
-      <div className="hero__actions">
+      <div className="not-found__actions">
         <ButtonLink href="/shop">Shop devices</ButtonLink>
-        <ButtonLink href="/" variant="ghost">
+        <ButtonLink href="/" variant="outline">
           Back home
         </ButtonLink>
       </div>

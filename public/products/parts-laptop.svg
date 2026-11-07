@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+<defs><linearGradient id="p" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0f7a4d"/><stop offset="1" stop-color="#0a4f33"/></linearGradient></defs>
+<g transform="rotate(-6 200 200)">
+ <rect x="40" y="130" width="320" height="110" rx="10" fill="url(#p)" stroke="#06261a" stroke-width="3"/>
+ <rect x="70" y="150" width="50" height="70" rx="5" fill="#15171c"/><rect x="135" y="150" width="50" height="70" rx="5" fill="#15171c"/><rect x="200" y="150" width="50" height="70" rx="5" fill="#15171c"/><rect x="265" y="150" width="50" height="70" rx="5" fill="#15171c"/>
+ <rect x="52" y="240" width="296" height="18" fill="#d9a441"/>
+ <path d="M60 242 V258 M80 242 V258 M100 242 V258 M120 242 V258 M140 242 V258 M160 242 V258 M180 242 V258 M200 242 V258 M220 242 V258 M240 242 V258 M260 242 V258 M280 242 V258 M300 242 V258 M320 242 V258" stroke="#8a6a1c" stroke-width="2"/>
+ <rect x="150" y="80" width="100" height="22" rx="4" fill="#fff" opacity=".85"/>
+ <text x="200" y="97" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#0a1a3f">DDR4 SODIMM</text>
+</g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+<defs>
+ <linearGradient id="s" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1f232d"/><stop offset=".5" stop-color="#3a4050"/><stop offset="1" stop-color="#1f232d"/></linearGradient>
+ <linearGradient id="c" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0f2f6"/><stop offset=".5" stop-color="#9aa0ac"/><stop offset="1" stop-color="#dfe2e8"/></linearGradient>
+</defs>
+<rect x="152" y="10" width="96" height="110" rx="22" fill="url(#s)"/>
+<rect x="152" y="280" width="96" height="108" rx="22" fill="url(#s)"/>
+<rect x="258" y="170" width="12" height="40" rx="4" fill="#8f95a1"/>
+<rect x="116" y="88" width="168" height="224" rx="52" fill="url(#c)" stroke="#6c7280" stroke-width="3"/>
+<rect x="128" y="100" width="144" height="200" rx="42" fill="#05070b"/>
+<text x="200" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#fff">10:09</text>
+<g transform="translate(200 214) rotate(-90)" fill="none" stroke-width="10" stroke-linecap="round">
+ <circle r="46" stroke="#ffffff14"/><circle r="46" stroke="#ff4d6d" stroke-dasharray="230 289"/>
+ <circle r="30" stroke="#ffffff14"/><circle r="30" stroke="#26e0a0" stroke-dasharray="140 189"/>
+ <circle r="14" stroke="#ffffff14"/><circle r="14" stroke="#26b5d8" stroke-dasharray="60 88"/>
+</g>
+</svg>

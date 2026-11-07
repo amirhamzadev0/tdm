@@ -14,7 +14,6 @@ export function discountPercent(price: number, oldPrice: number | null): number 
 const conditionLabels: Record<ProductCondition, string> = {
   new: "New",
   used: "Used",
-  refurbished: "Refurbished",
 };
 
 export function conditionLabel(condition: ProductCondition): string {

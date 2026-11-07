@@ -1,7 +1,6 @@
 import { site } from "@/config/site";
 import { phoneHref } from "@/utils/format";
 import { MapPreview } from "../maps/MapPreview";
-import { StarGrid } from "../ui/StarGrid";
 import { BookingForm } from "./BookingForm";
 
 interface BookingPanelProps {
@@ -26,7 +25,6 @@ export function BookingPanel({
   return (
     <div className="booking">
       <div className="booking__aside">
-        <StarGrid />
         <div>
           <h2 className="booking__title">
             {accentIndex >= 0 && headingAccent ? (

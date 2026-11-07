@@ -43,8 +43,6 @@ export const getOperations: Record<string, OperationHandler> = {
     const { slug } = slugSchema.parse(queryObject(searchParams));
     return orThrowNotFound(await container.repairs.findBySlug(slug), "Repair service");
   },
-
-  getOfferList: async () => container.offers.list(),
 };
 
 export const postOperations: Record<string, OperationHandler> = {

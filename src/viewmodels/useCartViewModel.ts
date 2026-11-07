@@ -9,7 +9,9 @@ const STORAGE_KEY = "dm_cart";
 const EMPTY_CART: CartItem[] = [];
 const MAX_QUANTITY = 20;
 
-export type CartProduct = Pick<Product, "id" | "slug" | "name" | "price">;
+export type CartProduct = Pick<Product, "id" | "slug" | "name" | "price"> & {
+  image?: string | null;
+};
 
 function isCartItem(value: unknown): value is CartItem {
   if (typeof value !== "object" || value === null) return false;
@@ -54,6 +56,7 @@ export function useCartViewModel() {
             name: product.name,
             price: product.price,
             quantity: 1,
+            image: product.image ?? null,
           },
         ];
       });

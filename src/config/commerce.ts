@@ -15,18 +15,6 @@ export const paymentMethods: PaymentMethod[] = [
     requiresReference: false,
   },
   {
-    id: "bkash",
-    name: "bKash",
-    note: "Send the total to 01XXX-XXXXXX (personal) and enter the transaction ID below.",
-    requiresReference: true,
-  },
-  {
-    id: "nagad",
-    name: "Nagad",
-    note: "Send the total to 01XXX-XXXXXX (personal) and enter the transaction ID below.",
-    requiresReference: true,
-  },
-  {
     id: "bank",
     name: "Bank transfer",
     note: "Transfer to Bank XXXX, A/C 0000000000 and enter the reference below.",
@@ -34,5 +22,5 @@ export const paymentMethods: PaymentMethod[] = [
   },
 ];
 
-/** Starting value of the flash-sale countdown, in seconds. */
-export const flashSaleSeconds = 6 * 3600 + 24 * 60 + 12;
+/** Last choice in the repair booking form, for anything not in the service list. */
+export const otherRepairService = "Other";

@@ -8,7 +8,7 @@ export const site: SiteInfo = {
   fullName: "The Device Master",
   tagline: "Next-gen devices. Expert repair.",
   description:
-    "Buy new, used and refurbished mobiles, laptops and computers, and book expert device repair with free diagnosis and a 30-day warranty.",
+    "Buy new and used mobiles, laptops and computers, and book expert device repair with free diagnosis and a 30-day warranty.",
   phone: "0325 5578000",
   email: "thedevicemasterofficial@gmail.com",
   address: "Shop No 14, London Plaza, G-9 Markaz, Islamabad",

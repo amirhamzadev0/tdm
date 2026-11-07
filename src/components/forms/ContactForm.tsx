@@ -8,7 +8,7 @@ export function ContactForm() {
   const vm = useContactViewModel();
 
   return (
-    <form className="form card" onSubmit={vm.onSubmit} noValidate>
+    <form className="form contact-form" onSubmit={vm.onSubmit} noValidate>
       {vm.state.status === "success" ? (
         <div className="form__alert" role="status">
           {vm.state.receipt.message}

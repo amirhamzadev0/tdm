@@ -3,7 +3,7 @@
     "hero": {
       "eyebrow": "Open daily · 10am – 8pm",
       "headline": ["Buy, repair & upgrade", "every", "device", "in one place"],
-      "summary": "New, used and refurbished mobiles, laptops and computers. Book a repair online and we'll confirm within the hour.",
+      "summary": "New and used mobiles, laptops and computers. Book a repair online and we'll confirm within the hour.",
       "searchPlaceholder": "Search 18+ products, brands, specs",
       "primaryCta": {
         "label": "Start Shopping",
@@ -24,10 +24,6 @@
         "text": "Pay only if you approve"
       },
       {
-        "title": "Easy installments",
-        "text": "Ask in store"
-      },
-      {
         "title": "Same-day repair",
         "text": "Most common fixes"
       }
@@ -39,7 +35,7 @@
     "booking": {
       "heading": "Book your repair slot",
       "headingAccent": "repair slot",
-      "summary": "Pick a service and a time. We call to confirm within the hour, and your booking appears on our admin desk instantly."
+      "summary": "Pick a service and a time. We call to confirm within the hour."
     },
     "offerings": {
       "heading": "What can we do for you",
@@ -47,7 +43,7 @@
         {
           "number": "01",
           "title": "Buy devices",
-          "text": "New, used and refurbished mobiles, laptops, computers and gadgets, all tested.",
+          "text": "New and used mobiles, laptops, computers and accessories, all tested.",
           "cta": {
             "label": "Shop Now",
             "href": "/shop"
@@ -64,11 +60,11 @@
         },
         {
           "number": "03",
-          "title": "Trade-in & offers",
-          "text": "Swap your old device and save with coupon codes and flash sales.",
+          "title": "Warranty & support",
+          "text": "Every repair comes with a 30-day warranty, and our team is a call away if anything is unclear.",
           "cta": {
-            "label": "See Offers",
-            "href": "/offers"
+            "label": "Contact Us",
+            "href": "/contact"
           }
         }
       ]

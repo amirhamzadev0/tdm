@@ -1,10 +1,7 @@
 import { BookingPanel } from "@/components/forms/BookingPanel";
-import { PageHero } from "@/components/layout/PageHero";
-import { RepairGuarantees } from "@/components/repair/RepairGuarantees";
-import { RepairProcess } from "@/components/repair/RepairProcess";
-import { RepairServiceList } from "@/components/repair/RepairServiceList";
+import { RepairGuide } from "@/components/home/RepairGuide";
+import { CategoryBanner, CategoryHead } from "@/components/layout/CategoryBanner";
 import { Section } from "@/components/ui/Section";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { routeSeo } from "@/config/seo";
 import { buildMetadata } from "@/lib/seo";
 import { getRepairPageViewModel } from "@/viewmodels/repair.viewmodel";
@@ -16,17 +13,14 @@ export default async function RepairPage() {
 
   return (
     <>
-      <PageHero eyebrow="// Repair" title={content.heroTitle} summary={content.heroSummary} />
+      <CategoryBanner id="repair" target="#repair-guide" />
+      <CategoryHead
+        title={content.heroTitle}
+        summary={content.heroSummary}
+        crumbs={[{ label: "Home", href: "/" }, { label: "Repair" }]}
+      />
 
-      <Section tone="navy">
-        <RepairProcess steps={content.process} />
-        <RepairServiceList services={services} />
-      </Section>
-
-      <Section>
-        <SectionHeading title="No surprises" />
-        <RepairGuarantees items={content.guarantees} />
-      </Section>
+      <RepairGuide services={services} promises={content.guarantees} hideHead />
 
       <Section id="book">
         <BookingPanel

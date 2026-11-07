@@ -8,6 +8,7 @@ export interface ListQuery {
 
 export interface ProductQuery extends ListQuery {
   category?: string;
+  subcategory?: string;
   brand?: string;
   condition?: ProductCondition;
 }

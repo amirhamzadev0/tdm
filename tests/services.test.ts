@@ -29,19 +29,49 @@ function setup() {
 describe("ProductService", () => {
   it("paginates the catalogue", async () => {
     const { products } = setup();
+    const all = await products.listAll();
+    const totalPages = Math.ceil(all.length / 5);
+
     const first = await products.list({ page: 1, pageSize: 5 });
     assert.equal(first.items.length, 5);
-    assert.equal(first.total, 18);
-    assert.equal(first.totalPages, 4);
+    assert.equal(first.total, all.length);
+    assert.equal(first.totalPages, totalPages);
 
-    const last = await products.list({ page: 4, pageSize: 5 });
-    assert.equal(last.items.length, 3);
+    const last = await products.list({ page: totalPages, pageSize: 5 });
+    assert.equal(last.items.length, all.length - (totalPages - 1) * 5);
   });
 
   it("clamps an out-of-range page to the last page", async () => {
     const { products } = setup();
+    const all = await products.listAll();
     const result = await products.list({ page: 99, pageSize: 5 });
-    assert.equal(result.page, 4);
+    assert.equal(result.page, Math.ceil(all.length / 5));
+  });
+
+  it("filters by section inside a category", async () => {
+    const { products } = setup();
+
+    const parts = await products.list({ category: "laptops", subcategory: "parts", pageSize: 48 });
+    assert.ok(parts.items.length > 0);
+    assert.ok(parts.items.every((item) => item.category === "laptops"));
+    assert.ok(parts.items.every((item) => item.subcategory === "parts"));
+
+    // Products without a section count as devices.
+    const devices = await products.list({
+      category: "mobiles",
+      subcategory: "devices",
+      pageSize: 48,
+    });
+    assert.ok(devices.items.some((item) => item.slug === "iphone-13-128gb"));
+    assert.ok(devices.items.every((item) => (item.subcategory ?? "devices") === "devices"));
+
+    const everything = await products.list({ category: "mobiles", pageSize: 48 });
+    const sections = ["devices", "accessories", "parts"];
+    let counted = 0;
+    for (const subcategory of sections) {
+      counted += (await products.list({ category: "mobiles", subcategory, pageSize: 48 })).total;
+    }
+    assert.equal(counted, everything.total);
   });
 
   it("filters by category, condition and search text", async () => {
@@ -55,21 +85,21 @@ describe("ProductService", () => {
     assert.ok(used.items.every((item) => item.condition === "used"));
 
     const search = await products.list({ search: "thinkpad" });
-    assert.equal(search.items.length, 1);
-    assert.equal(search.items[0]?.slug, "thinkpad-t480");
+    assert.ok(search.items.some((item) => item.slug === "thinkpad-t480"));
+    assert.ok(
+      search.items.every((item) => `${item.name} ${item.spec}`.toLowerCase().includes("thinkpad")),
+    );
   });
 
   it("filters by brand, case-insensitively", async () => {
     const { products } = setup();
     const apple = await products.list({ brand: "apple", pageSize: 48 });
-    assert.equal(apple.items.length, 3);
+    assert.ok(apple.items.length >= 3);
     assert.ok(apple.items.every((item) => item.brand === "Apple"));
 
     const laptops = await products.list({ category: "laptops", brand: "HP" });
-    assert.deepEqual(
-      laptops.items.map((item) => item.slug),
-      ["hp-pavilion-15"],
-    );
+    assert.ok(laptops.items.some((item) => item.slug === "hp-pavilion-15"));
+    assert.ok(laptops.items.every((item) => item.category === "laptops" && item.brand === "HP"));
   });
 
   it("rejects invalid query input", async () => {
@@ -134,6 +164,26 @@ describe("validation", () => {
     assert.equal(result.success, false);
   });
 
+  it("asks for a description when the service is Other", () => {
+    const base = {
+      fullName: "Sam",
+      phone: "03001234567",
+      device: "iPhone 13",
+      service: "Other",
+      preferredAt: "2026-12-01T10:00",
+    };
+
+    const missing = bookingSchema.safeParse({ ...base, problem: "" });
+    assert.equal(missing.success, false);
+    assert.deepEqual(missing.error?.issues[0]?.path, ["problem"]);
+
+    assert.equal(bookingSchema.safeParse({ ...base, problem: "Speaker crackles" }).success, true);
+    assert.equal(
+      bookingSchema.safeParse({ ...base, service: "Screen replacement", problem: "" }).success,
+      true,
+    );
+  });
+
   it("accepts a complete booking and returns a receipt", async () => {
     const { submissions } = setup();
     const receipt = await submissions.submitBooking({
@@ -171,14 +221,14 @@ describe("OrderService", () => {
     assert.match(receipt.id, /^OR-\d+$/);
   });
 
-  it("requires a payment reference for mobile banking", async () => {
+  it("requires a payment reference for bank transfer", async () => {
     const { orders } = setup();
     await assert.rejects(
       () =>
         orders.place({
           ...customer,
           shippingMethod: "pickup",
-          paymentMethod: "bkash",
+          paymentMethod: "bank",
           items: [{ productId: "p-13", quantity: 1 }],
         }),
       ZodError,

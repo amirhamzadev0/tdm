@@ -3,7 +3,7 @@
     "id": "c-1",
     "slug": "mobiles",
     "name": "Mobiles",
-    "summary": "New, used & refurbished phones",
+    "summary": "New & used phones",
     "order": 1,
     "brands": [
       "Apple",
@@ -16,6 +16,23 @@
       "Tecno",
       "Huawei",
       "OnePlus"
+    ],
+    "subcategories": [
+      {
+        "slug": "devices",
+        "name": "Mobiles",
+        "summary": "New & used phones"
+      },
+      {
+        "slug": "accessories",
+        "name": "Mobile Accessories",
+        "summary": "Chargers, cases, cables and glass protectors"
+      },
+      {
+        "slug": "parts",
+        "name": "Mobile Parts",
+        "summary": "Screens, batteries, ports and back glass"
+      }
     ]
   },
   {
@@ -24,7 +41,24 @@
     "name": "Laptops",
     "summary": "Work, study & gaming",
     "order": 2,
-    "brands": ["Apple", "HP", "Dell", "Lenovo", "ASUS", "Acer", "MSI", "Microsoft"]
+    "brands": ["Apple", "HP", "Dell", "Lenovo", "ASUS", "Acer", "MSI", "Microsoft"],
+    "subcategories": [
+      {
+        "slug": "devices",
+        "name": "Laptops",
+        "summary": "Work, study & gaming laptops"
+      },
+      {
+        "slug": "accessories",
+        "name": "Laptop Accessories",
+        "summary": "Sleeves, cooling pads, hubs and add-ons"
+      },
+      {
+        "slug": "parts",
+        "name": "Laptop Parts",
+        "summary": "Batteries, screens, RAM, SSDs and keyboards"
+      }
+    ]
   },
   {
     "id": "c-3",
@@ -43,22 +77,43 @@
       "AMD",
       "NVIDIA",
       "Corsair"
+    ],
+    "subcategories": [
+      {
+        "slug": "devices",
+        "name": "Computers",
+        "summary": "Desktops & workstations"
+      },
+      {
+        "slug": "accessories",
+        "name": "Computer Accessories",
+        "summary": "Keyboards, webcams, mouse pads and add-ons"
+      },
+      {
+        "slug": "parts",
+        "name": "Computer Parts",
+        "summary": "Graphics cards, RAM, SSDs, power supplies and boards"
+      }
     ]
   },
   {
     "id": "c-4",
     "slug": "accessories",
     "name": "Accessories",
-    "summary": "Chargers, bags & more",
+    "summary": "Chargers, audio, watches & more",
     "order": 4,
-    "brands": ["Anker", "Logitech", "Baseus", "Ugreen", "Razer", "HyperX"]
-  },
-  {
-    "id": "c-5",
-    "slug": "gadgets",
-    "name": "Gadgets",
-    "summary": "Audio, wearables & power",
-    "order": 5,
-    "brands": ["Sony", "JBL", "Xiaomi", "Samsung", "Apple", "Anker"]
+    "brands": [
+      "Anker",
+      "Logitech",
+      "Baseus",
+      "Ugreen",
+      "Razer",
+      "HyperX",
+      "Sony",
+      "JBL",
+      "Xiaomi",
+      "Samsung",
+      "Apple"
+    ]
   }
 ]

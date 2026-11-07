@@ -1,7 +1,7 @@
 # device masters
 
-Storefront and repair desk for a computer, laptop and mobile shop: buy new, used and
-refurbished devices, book a repair, and check out with a cart.
+Storefront and repair desk for a computer, laptop and mobile shop: buy new and used
+devices, book a repair, and check out with a cart.
 
 **Phase 1 is frontend only.** Every page renders from typed mock JSON through the same
 Model → Repository → Service → ViewModel → View layers, so a MySQL/admin backend can be

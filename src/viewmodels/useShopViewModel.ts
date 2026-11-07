@@ -10,18 +10,27 @@ interface ShopViewModelOptions {
   initial: PageResult<Product>;
   /** When set, the category filter is fixed (category pages). */
   lockedCategory?: string;
+  /** When set, only this section of the category is shown (e.g. "parts"). */
+  lockedSubcategory?: string;
   /** Search term the server used to render `initial`. */
   initialSearch?: string;
 }
 
-function queryKey(search: string, category: string, condition: string, page: number): string {
-  return JSON.stringify([search, category, condition, page]);
+function queryKey(
+  search: string,
+  category: string,
+  subcategory: string,
+  condition: string,
+  page: number,
+): string {
+  return JSON.stringify([search, category, subcategory, condition, page]);
 }
 
 /** Search, filter and pagination state for the product catalogue. */
 export function useShopViewModel({
   initial,
   lockedCategory,
+  lockedSubcategory,
   initialSearch = "",
 }: ShopViewModelOptions) {
   const [searchInput, setSearchInput] = useState(initialSearch);
@@ -30,10 +39,11 @@ export function useShopViewModel({
   const [page, setPage] = useState(1);
 
   const search = useDebounce(searchInput.trim(), 250);
-  const key = queryKey(search, category, condition, page);
+  const subcategory = lockedSubcategory ?? "";
+  const key = queryKey(search, category, subcategory, condition, page);
 
   const [entry, setEntry] = useState({
-    key: queryKey(initialSearch.trim(), lockedCategory ?? "", "", 1),
+    key: queryKey(initialSearch.trim(), lockedCategory ?? "", lockedSubcategory ?? "", "", 1),
     result: initial,
   });
   const [failure, setFailure] = useState<{ key: string; message: string } | null>(null);
@@ -46,6 +56,7 @@ export function useShopViewModel({
       query: {
         search,
         category,
+        subcategory,
         condition,
         page,
         pageSize: initial.pageSize,
@@ -65,7 +76,7 @@ export function useShopViewModel({
       });
 
     return () => controller.abort();
-  }, [entry.key, key, search, category, condition, page, initial.pageSize]);
+  }, [entry.key, key, search, category, subcategory, condition, page, initial.pageSize]);
 
   const updateSearch = useCallback((value: string) => {
     setSearchInput(value);

@@ -2,6 +2,7 @@
 
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import { Fragment } from "react";
 import { useNavigation } from "@/hooks/useNavigation";
 import type { NavItem } from "@/models/site";
 
@@ -30,14 +31,25 @@ export function MobileMenu({ items }: { items: NavItem[] }) {
                   {item.label}
                 </Link>
                 {item.children?.map((child) => (
-                  <Link
-                    key={child.href}
-                    href={child.href}
-                    className="mobile-menu__link mobile-menu__link--child"
-                    onClick={close}
-                  >
-                    {child.label}
-                  </Link>
+                  <Fragment key={child.href}>
+                    <Link
+                      href={child.href}
+                      className="mobile-menu__link mobile-menu__link--child"
+                      onClick={close}
+                    >
+                      {child.label}
+                    </Link>
+                    {child.children?.map((grand) => (
+                      <Link
+                        key={grand.href}
+                        href={grand.href}
+                        className="mobile-menu__link mobile-menu__link--grand"
+                        onClick={close}
+                      >
+                        {grand.label}
+                      </Link>
+                    ))}
+                  </Fragment>
                 ))}
               </li>
             ))}

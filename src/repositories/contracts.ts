@@ -1,6 +1,5 @@
 import type { Category } from "@/models/category";
 import type { HomeContent, RepairContent } from "@/models/content";
-import type { Offer } from "@/models/offer";
 import type { OrderRecord } from "@/models/order";
 import type { Product } from "@/models/product";
 import type { RepairService } from "@/models/repair-service";
@@ -20,10 +19,6 @@ export interface CategoryRepository {
 export interface RepairServiceRepository {
   findAll(): Promise<RepairService[]>;
   findBySlug(slug: string): Promise<RepairService | null>;
-}
-
-export interface OfferRepository {
-  findAll(): Promise<Offer[]>;
 }
 
 export interface PageRepository {
